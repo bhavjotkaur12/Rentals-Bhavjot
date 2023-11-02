@@ -1,0 +1,16 @@
+{
+  "name": "rentals-bhavjot",
+  "version": "1.0.0",
+  "description": "Web programming assignment 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bhavjot Kaur Pal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4"
+  }
+}

@@ -1,0 +1,132 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#header{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(123, 25, 234, 0.856);
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+
+#header h2{
+    color: antiquewhite;
+}
+
+
+#header input{
+    padding-left: 7px;
+    width: 50%;
+    height: 30px;
+    border: none;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) ;
+}
+
+
+#header button{
+    width: 15%;
+    height: 32px;
+    border: none;
+    margin-left: -5px;
+    background-color: rgb(224, 224, 224);
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2) ;
+}
+
+
+
+
+main h1{
+    text-align: center;
+}
+
+
+
+
+#form{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 5%;
+
+
+}
+
+
+#form button{
+    padding: 3px 15px ;
+    border: 1px solid rgb(165, 165, 165);
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) ;
+}
+
+
+#form select{
+    padding: 3px 10px;
+    border: 1px solid rgb(190, 189, 189);
+    border-radius: 7px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) ;
+}
+
+
+#items{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(163, 163, 163);
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+
+main ul{
+    padding: 0;
+    margin: 0;
+}
+#items li{
+    list-style: none;
+    font-weight: bold;
+   
+}
+
+#items img{
+    margin-top: 10px;
+}
+
+#items button{
+    padding: 3px 10px;
+    border: 1px solid rgb(190, 189, 189);
+    border-radius: 9px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) ;
+}
+
+
+#rental{
+    padding: auto auto auto 20%;
+    margin: auto;
+    width: 70%;
+
+
+}
+
+
+#rented {
+    background-color: yellow;
+    padding: 5px 15px;
+}
+
+
+#error{
+    margin: auto;
+    padding: auto;
+    width: 40%;
+    text-align: center;
+}
+
+
+#error button{
+    padding: 8px 18px;
+    background-color:rgba(123, 25, 234, 0.856);
+    border: 0px;
+    color: antiquewhite;
+}

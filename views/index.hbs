@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/public/style.css">
+  </head>
+  <body>
+    <div id="header">
+         <h2>Bhavjot's Rentals</h2>
+          <form method="POST" action="/search">
+        <input type="text" name="keyword" placeholder="Enter keyword">
+        <button type="submit">Search</button>
+      </form>
+
+
+    </div>
+<main>
+    <h1>Rental Catalogue</h1>
+    <div id="rental">
+<div id="form">
+    {{#if items}}
+      <form method="POST" action="/update">
+        <label for="criteria">Modify results:</label>
+        <select name="criteria">
+          <option value=""disabled selected >choose an option</option>
+          <option value="available">Available Items</option>
+          <option value="rented">Your Rentals</option>
+        </select>
+        <button type="submit">Update</button>
+      </form>
+
+
+     <form method="POST" action="/return">
+        <button type="submit">Return All Items</button>
+      </form>
+</div>
+     
+
+
+      <ul>
+        <div>
+            {{#each items}}
+
+
+           
+        </div>
+        <div id="items">
+            <li>
+            {{name}}
+            <br/>
+            <img src="{{imageUrl}}" alt="" height="170px" width="220px">
+           
+            {{#if available}}
+           
+              <form method="POST" action="/rent">
+                <input type="hidden" name="itemId" value="{{id}}">
+                <button type="submit">Rent</button>
+              </form>
+            {{else}}
+              <p id="rented">This item is already rented by you.</p>
+            {{/if}}
+          </li>
+        {{/each}}
+       
+        </div>
+         
+      </ul>
+
+
+     
+    {{else}}
+      <p>No items found.</p>
+    {{/if}}
+
+
+    </div>
+   
+
+
+</main>
+
+
+
+
+  </body>
+</html>
+
+
